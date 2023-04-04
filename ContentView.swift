@@ -1,12 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var int =  ""
+    @State var defaultInt = 0
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            TextField("Enter Number Here", text: $int)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+            TextField("Enter Number Here", text: $int)
+                .textFieldStyle(.roundedBorder)
+                .padding()
         }
     }
 }
