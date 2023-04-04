@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var Answer = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            Button(<#T##title: StringProtocol##StringProtocol#>, action: <#T##() -> Void#>)
+            
+            Text(Answer)
         }
     }
 }
